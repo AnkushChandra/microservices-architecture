@@ -1,0 +1,12 @@
+ankushc@Mac Assignment-2 % python3 clientd/client.py
+When: If Item Info = 200 and Stock = 200, return merged information.
+{'productID': 'XYZ-12345'}
+{"productID":"XYZ-12345","name":"Amayon Basics Wipes","available":210}
+
+When: If Item Info = 404, return 404 to client. (No product.)
+{'productID': 'XYZ-12347'}
+{"detail":"Product not found"}
+
+When: If Item Info = 200 and Stock = 404, return 200 with available: 0.
+{'productID': 'XYZ-12346'}
+{"productID":"XYZ-12346","name":"Amayon Basics Paper Towels","available":0}
